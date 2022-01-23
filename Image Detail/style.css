@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    width: 100%;
+}
+
+.nav {
+    align-items: space-between;
+    display: flex;
+    width: 80%;
+    height: 100px;
+    margin-left: 10%;
+}
+
+.navigate {
+    width: 20%;
+    display: flex;
+    justify-content: left;
+
+}
+
+.navbar {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+
+}
+
+a{
+    text-decoration: none;
+}
+.navbar span {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    left: 15px;
+    transition: .4s;
+    border-radius: 4px;
+    background-color: black;
+}
+
+.navbar span:nth-child(1) {
+    width: 25px;
+    left: 15px;
+    transform: translateY(-10px);
+
+}
+
+.navbar.active span:nth-child(1) {
+    width: 30px;
+    transform: translateY(0px) rotate(45deg);
+    transition-delay: 0.125s;
+
+}
+
+.navbar span:nth-child(2) {
+    width: 15px;
+    left: 15px;
+    transform: translateY(10px);
+
+}
+
+.navbar.active span:nth-child(2) {
+    transition-delay: 0.25s;
+
+    width: 30px;
+    transform: translateY(0px) rotate(315deg);
+
+}
+
+.navbar.active span:nth-child(3) {
+    width: 15px;
+    left: 15px;
+    transform: translateX(50px);
+
+}
+
+
+
+.log {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    color: black;
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 300;
+}
+.logo:hover{
+
+    color: black;
+}
+
+
+.none {
+    width: 20%;
+}
+
+.op {
+     width: 100%;
+
+    height:fit-content;
+    padding: 20px 0;
+    z-index: 1;
+    top:-800px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.562);;
+    position: absolute;
+    transition-duration: 1s;
+
+}
+
+.op.open {
+    z-index: 1;
+    top:125px;
+
+}
+.lp{
+   text-align: center;
+   display: flex;
+   justify-content: center;
+
+
+}
+
+.kop{
+    margin-top: 0px;
+    display:flex;
+     justify-content: center;
+     gap: 10px;
+      overflow: hidden;
+      height: 0px;
+    transition: all .5s;
+   
+     }
+
+
+.more{
+    width: fit-content;
+}
+.gp:hover > .kop {
+    border-bottom: 2px solid #fff;
+     margin-top: 20px;
+    transition: all .5s;
+    overflow:visible;
+    flex-wrap: wrap;
+    height:45px;
+
+    
+}
+
+
+
+.ji{
+    display: flex;
+    justify-content: center;
+
+
+}
+.options{
+    width: fit-content;
+    font-size: 20px;
+    cursor: pointer;
+    color:#fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+
+}
+.yop {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    width: fit-content;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+
+
+
+}
+.yop:hover{
+    border-bottom: 2px solid #fff;
+
+}
+
+
+@media (max-width:560px) {
+    .gp:hover > .kop {
+        border-bottom: 2px solid #fff;
+         margin-top: 20px;
+        transition: all .5s;
+        overflow:visible;
+        flex-wrap: wrap;
+
+        height:80px;
+    
+        
+    }
+    .options{
+        font-size: 18px;
+    }
+    
+}
+
+
+@media (max-width:480px) {
+    .logo{
+        font-size: 40px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.d-block{
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+}
+
+
+#carouselExampleControls{
+    height: auto;
+    margin-top: 25px;
+}
+.carousel-control-next-icon{
+    background-color: black;
+    border-radius: 3px;
+}
+
+.carousel-control-prev-icon{
+    border-radius: 3px;
+
+    background-color: black;
+}
+
+
+
+.headingno1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    text-align:center ;
+}
+
+.centerd{
+    width: fit-content;
+    text-align: center;
+ font-family: 'Open Sans', sans-serif;
+}
+
+.ovi{
+    font-family: 'Open Sans';
+    font-weight: 300;
+    font-size: 50px;
+}
+.losangle{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+
+@media (max-width:520px) {
+    .ovi{
+        font-size: 35px;
+    }
+    
+}
